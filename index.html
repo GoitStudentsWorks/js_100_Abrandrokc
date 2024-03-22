@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/js_100_Abrandrokc/assets/J_-8ddae73f.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Team 12</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    
+    <script type="module" crossorigin src="/js_100_Abrandrokc/commonHelpers.js"></script>
+    <link rel="modulepreload" crossorigin href="/js_100_Abrandrokc/assets/vendor-714753f3.js">
+    <link rel="stylesheet" href="/js_100_Abrandrokc/assets/vendor-91413512.css">
+    <link rel="stylesheet" href="/js_100_Abrandrokc/assets/index-9cef15b2.css">
+  </head>
+  <body>
+    <header class="header">
+  <div class="header-container container">
+    <div class="header-logo__container">
+      <picture>
+        <source
+          srcset="/js_100_Abrandrokc/assets/logo-e643378d.png , /js_100_Abrandrokc/assets/logo@2x-8f8f436f.png 2x"
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="/js_100_Abrandrokc/assets/image-05c6ef68.png , /js_100_Abrandrokc/assets/image@2x-fc9f8182.png 2x"
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="/js_100_Abrandrokc/assets/mobile-image@2x-3a2bd739.png 2x"
+          media="(min-width: 375px)"
+        />
+        <img
+          src="data:image/png;base64,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"
+          alt="Хлопець в окулярах"
+          width="80"
+          height="80"
+        />
+      </picture>
+
+      <svg class="header-logo__svg" width="84" height="19">
+        <use href="/js_100_Abrandrokc/assets/sprite-9c84ecfb.svg#icon-jefferson"></use>
+      </svg>
+    </div>
+
+    <nav class="header-nav">
+      <div class="nav-menu__wrap">
+        <button class="nav-menu__btn">Menu</button>
+        <ul class="header-list is-hidden">
+          <li class="header-items">
+            <a class="header-link" href="#about-me">About me</a>
+          </li>
+          <li class="header-items">
+            <a class="header-link" href="#benefits">Benefits</a>
+          </li>
+          <li class="header-items">
+            <a class="header-link" href="#projects">Projects</a>
+          </li>
+          <li class="header-items">
+            <a class="header-link" href="#FAQ">FAQ</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <a class="header-order header-order__link" href="#section-work-together"
+      >Order the project</a
+    >
+
+    <button class="menu-open" type="button">
+      <svg class="menu-open__svg" width="28" height="28">
+        <use href="/js_100_Abrandrokc/assets/sprite-9c84ecfb.svg#icon-menu"></use>
+      </svg>
+    </button>
+  </div>
+  <div class="mobile-menu">
+    <div class="mobile-wrap">
+      <button class="menu-close mobile-container__svg" type="button">
+        <svg class="menu-close__svg" width="16" height="16">
+          <use href="/js_100_Abrandrokc/assets/sprite-9c84ecfb.svg#icon-x"></use>
+        </svg>
+      </button>
+
+      <div class="markup">
+        <ul class="mob-menu__list">
+          <li class="mob-menu__item">
+            <a class="mob-menu__link" href="#about-me">About me</a>
+          </li>
+          <li class="mob-menu__item">
+            <a class="mob-menu__link" href="#benefits">Benefits</a>
+          </li>
+          <li class="mob-menu__item">
+            <a class="mob-menu__link" href="#projects">Projects</a>
+          </li>
+          <li class="mob-menu__item">
+            <a class="mob-menu__link" href="#FAQ">FAQ</a>
+          </li>
+        </ul>
+      </div>
+      <div class="mobile-container__btn">
+        <a class="mobile-link mobile-btn" href="#section-work-together"
+          >Order the project</a
+        >
+      </div>
+    </div>
+  </div>
+</header>
+
+    <section class="section hero">
+
+  <div class="container">
+    <h1 class="hero-header">
+      Hello.<br />I’m Fullstack developer<br />Lloyd Jefferson.
+    </h1>
+
+    <ul class="hero-list">
+      <li class="hero-list-item lloyd-social">
+        <a
+          href="http://www.instagram.com/goitclub/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="hero-list-link"
+          >IG</a
+        >
+      </li>
+      <li class="hero-list-item lloyd-social">
+        <a
+          href="http://www.facebook.com/goITclub/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="hero-list-link"
+          >FB</a
+        >
+      </li>
+      <li class="hero-list-item lloyd-social">
+        <a
+          href="http://www.youtube.com/c/GoIT"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="hero-list-link"
+          >YT</a
+        >
+      </li>
+      <li class="hero-list-item lloyd-social">
+        <a
+          href="https://github.com/Abrandrokc/team-12"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="hero-list-link"
+          >GH</a
+        >
+      </li>
+      <li class="hero-list-item lloyd-email">
+        <a
+          href="mailto:lloydjefferson@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="hero-list-link"
+          >lloydjefferson@gmail.com</a
+        >
+      </li>
+    </ul>
+  </div>
+</section>
+
+    <section id="about-me" class="section about-me">
+  <div class="container about-conteiner">
+    <h1 class="visually-hidden">About me</h1>
+    <div class="title-with-photo">
+      <div class="title">
+        <h3 class="title-text">
+          I work with people all over the world to create impressive and
+          <span class="title-func">functional</span>
+          <span class="title-web">websites</span> that reflect each client's
+          unique personality.
+        </h3>
+      </div>
+      <div class="photo-about-me">
+        <picture>
+          <source
+            media="(min-width:1440px)"
+            srcset="/js_100_Abrandrokc/assets/desktop-about-me-image-cf6a5b29.png 1x, /js_100_Abrandrokc/assets/desktop-about-me-image@2x-e3850a2d.png 2x"
+            type="image/png"
+          />
+          <source
+            media="(min-width:768px)"
+            srcset="/js_100_Abrandrokc/assets/tablet-about-me-image-6044bbb8.png 1x, /js_100_Abrandrokc/assets/tablet-about-me-image@2x-ac61f881.png 2x"
+            type="image/png"
+          />
+          <source
+            media="(max-width:767px)"
+            srcset="/js_100_Abrandrokc/assets/mobile-about-me-image-4794e85d.png 1x, /js_100_Abrandrokc/assets/mobile-about-me-image@2x-e21abe92.png 2x"
+            type="image/png"
+          />
+          <img
+            class="about-image"
+            src="./img/mobile-about-me-image"
+            alt="mine-photo"
+            loading="lazy"
+          />
+        </picture>
+      </div>
+    </div>
+
+    <div class="info-about-me">
+      <ul class="info-list">
+        <li class="ac info-item">
+          <h3 class="ac-header info-item-titel">About me</h3>
+
+          <button class="ac-trigger button-up-down button-roll" type="button">
+            <svg>
+              <use
+                href="/js_100_Abrandrokc/assets/sprite-9c84ecfb.svg#icon-arrow-down"
+                width="20"
+                height="20"
+              ></use>
+            </svg>
+          </button>
+
+          <div class="ac-panel info-item-descr">
+            <p class="ac-text info-item-text">
+              I am Lloyd Jefferson, a talented programmer with extensive
+              expertise in software development. I have an understanding of
+              different programming languages and technologies, always ready to
+              improve my skills. I always follow the latest trends and look for
+              unconventional, creative solutions to problems. I have a high
+              level of analytical skills and am able to effectively solve even
+              the most difficult tasks encountered on the way.
+            </p>
+            <p class="ac-text info-item-text">
+              Able to work both independently and in a team. I can effectively
+              cooperate with colleagues, exchanging ideas and finding optimal
+              solutions. Professional maturity allows you to calmly cope with
+              challenges and stressful situations, while maintaining a high
+              quality of work. I am always looking for opportunities for
+              self-improvement. I actively study new technologies and practices
+              to stay abreast of the latest innovations. I have a strong
+              understanding of various programming languages, frameworks and
+              architectural concepts that allow me to create efficient and
+              scalable software.
+            </p>
+          </div>
+        </li>
+
+        <li class="ac info-item">
+          <h3 class="ac-header info-item-titel">Role</h3>
+
+          <button class="ac-trigger button-up-down" type="button">
+            <svg>
+              <use
+                href="/js_100_Abrandrokc/assets/sprite-9c84ecfb.svg#icon-arrow-down"
+                width="20"
+                height="20"
+              ></use>
+            </svg>
+          </button>
+
+          <div class="ac-panel info-item-descr">
+            <p class="ac-text info-item-text">Frontend development</p>
+            <p class="ac-text info-item-text">HeadlessCMS,Wordpress</p>
+            <p class="ac-text info-item-text">Blender(enjoy)</p>
+          </div>
+        </li>
+
+        <li class="ac info-item">
+          <h3 class="ac-header info-item-titel">Education</h3>
+
+          <button class="ac-trigger button-up-down" type="button">
+            <svg class="about-me-svg">
+              <use
+                href="/js_100_Abrandrokc/assets/sprite-9c84ecfb.svg#icon-arrow-down"
+                width="20"
+                height="20"
+              ></use>
+            </svg>
+          </button>
+
+          <div class="ac-panel info-item-descr">
+            <p class="ac-text info-item-text">
+              2018 - 2019 / Frontend Development Diploma, GoIT IT School, New
+              York
+            </p>
+            <p class="ac-text info-item-text">
+              2019 - 2020 / Advanced Web Development Certificate, GoIT IT
+              School, New York
+            </p>
+            <p class="ac-text info-item-text">
+              2020 - 2022 / Advanced Blender Animation Techniques, Udemy
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="swiper-container skills-container">
+      <ul class="swiper-wrapper skills-wrapper">
+        <li class="swiper-slide skills-slide">HTML/CSS</li>
+        <li class="swiper-slide skills-slide">JavaScript</li>
+        <li class="swiper-slide skills-slide">React</li>
+        <li class="swiper-slide skills-slide">Node.js</li>
+        <li class="swiper-slide skills-slide">React Native</li>
+        <li class="swiper-slide skills-slide">Soft skills</li>
+      </ul>
+      <div class="swiper-button-next skills-button-next">
+        <svg>
+          <use
+            href="/js_100_Abrandrokc/assets/sprite-9c84ecfb.svg#icon-arrow-narrow-right"
+            width="40"
+            height="40"
+          ></use>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section id="benefits" class="section-benefits section">
+  <div class="container container-benefits">
+    <h2 class="benefits-title-section">Benefits of working with me</h2>
+
+    <div class="benefits-desktop">
+      <ul class="benefits-list">
+        <li class="benefits-item">
+          <div class="benefits-svg-icon">
+            <svg class="benefits-icon" width="24" height="24">
+              <use href="/js_100_Abrandrokc/assets/sprite-9c84ecfb.svg#icon-human"></use>
+            </svg>
+          </div>
+
+          <h3 class="benefits-title">Expertise</h3>
+          <p class="benefits-text">
+            As a highly experienced developer, I have deep knowledge of
+            programming and website development.
+          </p>
+        </li>
+
+        <li class="benefits-item">
+          <div class="benefits-svg-icon">
+            <svg class="benefits-icon" width="24" height="24">
+              <use href="/js_100_Abrandrokc/assets/sprite-9c84ecfb.svg#icon-massage"></use>
+            </svg>
+          </div>
+
+          <h3 class="benefits-title">Communication</h3>
+          <p class="benefits-text">
+            Understanding your needs and wants is my priority and I am always
+            open to discussions and corrections.
+          </p>
+        </li>
+
+        <li class="benefits-item">
+          <div class="benefits-svg-icon">
+            <svg class="benefits-icon" width="24" height="24">
+              <use href="/js_100_Abrandrokc/assets/sprite-9c84ecfb.svg#icon-art"></use>
+            </svg>
+          </div>
+
+          <h3 class="benefits-title">Art</h3>
+          <p class="benefits-text">
+            Thanks to my creative nature, I am ready to accept challenges and
+            help you bring your ideas to life.
+          </p>
+        </li>
+
+        <li class="benefits-item">
+          <div class="benefits-svg-icon">
+            <svg class="benefits-icon" width="24" height="24">
+              <use href="/js_100_Abrandrokc/assets/sprite-9c84ecfb.svg#icon-time"></use>
+            </svg>
+          </div>
+
+          <h3 class="benefits-title">Urgent</h3>
+          <p class="benefits-text">
+            I understand how important time is to you. Ready to work quickly and
+            efficiently, without reducing the quality of work.
+          </p>
+        </li>
+      </ul>
+      <a href="#section-work-together" class="benefits-btn"
+        >Order the project</a
+      >
+    </div>
+  </div>
+</section>
+
+    <section id="projects" class="section secthion-project">
+  <div class="projects-container conteiner container">
+    <h2 class="projects-section-title">Projects</h2>
+
+    <!-- list of projects -->
+    <div class="swiper-container projects-swiper-container">
+      <ul class="projects-list swiper-wrapper">
+        <li class="projects-list-item swiper-slide">
+          <div class="project-description-part">
+            <ul class="project-technologies-list">
+              <!-- list of project technologies -->
+
+              <li class="project-technology">#react</li>
+              <li class="project-technology">#js</li>
+              <li class="project-technology">#node js</li>
+              <li class="project-technology">#git</li>
+            </ul>
+            <h3 class="project-title">
+              Programming Across Borders: Ideas, Technologies, Innovations
+            </h3>
+            <a
+              class="project-link"
+              href="https://github.com/Abrandrokc/team-12"
+              target="_blank"
+              >See project</a
+            >
+          </div>
+          <div class="project-image-part">
+            <picture class="project-image">
+              <source
+                media="(max-width:767px)"
+                srcset="/js_100_Abrandrokc/assets/project-1-mobile-min-fd0136f1.png 1x, /js_100_Abrandrokc/assets/project-1-mobile@2x-min-6ba919a4.png 2x"
+              />
+              <source
+                media="(min-width:768px)"
+                srcset="/js_100_Abrandrokc/assets/project-1-tablet-min-1dc571a7.png 1x, /js_100_Abrandrokc/assets/project-1-tablet@2x-min-c6a1c14c.png 2x"
+              />
+              <source
+                media="(min-width:1440px)"
+                srcset="/js_100_Abrandrokc/assets/project-1-tablet-min-1dc571a7.png 1x, /js_100_Abrandrokc/assets/project-1-tablet@2x-min-c6a1c14c.png 2x"
+              />
+              <img
+                src="/js_100_Abrandrokc/assets/project-1-mobile-min-fd0136f1.png"
+                alt="project"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+        </li>
+        <li class="projects-list-item swiper-slide">
+          <div class="project-description-part">
+            <ul class="project-technologies-list">
+              <!-- list of project technologies -->
+
+              <li class="project-technology">#react</li>
+              <li class="project-technology">#js</li>
+              <li class="project-technology">#node js</li>
+              <li class="project-technology">#git</li>
+            </ul>
+            <h3 class="project-title">
+              Programming Across Borders: Ideas, Technologies, Innovations
+            </h3>
+            <a
+              class="project-link"
+              href="https://github.com/Abrandrokc/team-12"
+              target="_blank"
+              >See project</a
+            >
+          </div>
+          <div class="project-image-part">
+            <picture class="project-image">
+              <source
+                media="(max-width:767px)"
+                srcset="/js_100_Abrandrokc/assets/project-2-mobile-min-bf2c0958.png 1x, /js_100_Abrandrokc/assets/project-2-mobile@2x-min-80c883e1.png 2x"
+              />
+              <source
+                media="(min-width:768px)"
+                srcset="/js_100_Abrandrokc/assets/project-2-tablet-min-a1d44d2e.png 1x, /js_100_Abrandrokc/assets/project-2-tablet@2x-min-08b89ee0.png 2x"
+              />
+              <source
+                media="(min-width:1440px)"
+                srcset="/js_100_Abrandrokc/assets/project-2-tablet-min-a1d44d2e.png 1x, /js_100_Abrandrokc/assets/project-2-tablet@2x-min-08b89ee0.png 2x"
+              />
+              <img
+                src="/js_100_Abrandrokc/assets/project-2-mobile-min-bf2c0958.png"
+                alt="project"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+        </li>
+        <li class="projects-list-item swiper-slide">
+          <div class="project-description-part">
+            <ul class="project-technologies-list">
+              <!-- list of project technologies -->
+
+              <li class="project-technology">#react</li>
+              <li class="project-technology">#js</li>
+              <li class="project-technology">#node js</li>
+              <li class="project-technology">#git</li>
+            </ul>
+            <h3 class="project-title">
+              Programming Across Borders: Ideas, Technologies, Innovations
+            </h3>
+            <a
+              class="project-link"
+              href="https://github.com/Abrandrokc/team-12"
+              target="_blank"
+              >See project</a
+            >
+          </div>
+          <div class="project-image-part">
+            <picture class="project-image">
+              <source
+                media="(max-width:767px)"
+                srcset="/js_100_Abrandrokc/assets/project-3-mobile-min-136948f0.png 1x, /js_100_Abrandrokc/assets/project-3-mobile@2x-min-f2aef34d.png 2x"
+              />
+              <source
+                media="(min-width:768px)"
+                srcset="/js_100_Abrandrokc/assets/project-3-tablet-min-90e1726f.png 1x, /js_100_Abrandrokc/assets/project-3-tablet@2x-min-aee44341.png 2x"
+              />
+              <source
+                media="(min-width:1440px)"
+                srcset="/js_100_Abrandrokc/assets/project-3-tablet-min-90e1726f.png 1x, /js_100_Abrandrokc/assets/project-3-tablet@2x-min-aee44341.png 2x"
+              />
+              <img
+                src="/js_100_Abrandrokc/assets/project-3-mobile-min-136948f0.png"
+                alt="project"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="swiper-buttons-container projects-swiper-buttons-container">
+      <div class="projects-swiper-button-prev swiper-button-prev swiper-button">
+        <svg class="swiper-button-svg" width="24" height="24">
+          <use href="/js_100_Abrandrokc/assets/sprite-9c84ecfb.svg#icon-arrow-narrow-right"></use>
+        </svg>
+      </div>
+      <div class="projects-swiper-button-next swiper-button-next swiper-button">
+        <svg class="swiper-button-svg" width="24" height="24">
+          <use href="/js_100_Abrandrokc/assets/sprite-9c84ecfb.svg#icon-arrow-narrow-right"></use>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="faq-section section" id="FAQ">
+  <div class="container-faq container">
+    <h2 class="faq-title">FAQ</h2>
+    <ul class="faq-list accordion-container">
+      <li class="faq-item ac">
+        <div class="faq-item-container">
+          <h3 class="faq-item-headline">
+            What programming languages are most often used in your project?
+          </h3>
+          <button class="faq-arrow-btn ac-trigger" type="button">
+            <svg
+              class="faq-arrow-icon"
+              width="20"
+              height="20"
+              aria-label="arrow up icon"
+            >
+              <use href="/js_100_Abrandrokc/assets/sprite-9c84ecfb.svg#icon-arrow-down"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="ac-panel">
+          <p class="answer-question ac-text">
+            In the field of web development, there are various technologies and
+            programming languages. Typically, this includes a combination of
+            frontend (client side) and backend (server side) languages.
+          </p>
+        </div>
+      </li>
+
+      <li class="faq-item ac">
+        <div class="faq-item-container ac-header">
+          <h3>What are the deadlines for the project?</h3>
+
+          <button class="faq-arrow-btn ac-trigger" type="button">
+            <svg
+              class="faq-arrow-icon"
+              width="20"
+              height="20"
+              aria-label="arrow up icon"
+            >
+              <use href="/js_100_Abrandrokc/assets/sprite-9c84ecfb.svg#icon-arrow-down"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="ac-panel">
+          <p class="answer-question ac-text">
+            The terms of project implementation depend to a large extent on a
+            number of factors, such as the scope of the project, its complexity,
+            and the availability of resources. Determining exact deadlines is a
+            difficult task, and it usually occurs during the planning phase of
+            the project.
+          </p>
+        </div>
+      </li>
+
+      <li class="faq-item ac">
+        <div class="faq-item-container ac-header">
+          <h3>What payment methods do you accept?</h3>
+
+          <button class="faq-arrow-btn ac-trigger" type="button">
+            <svg
+              class="faq-arrow-icon"
+              width="20"
+              height="20"
+              aria-label="arrow up icon"
+            >
+              <use href="/js_100_Abrandrokc/assets/sprite-9c84ecfb.svg#icon-arrow-down"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="ac-panel">
+          <p class="answer-question ac-text">
+            Payment through credit and debit cards such as Visa, MasterCard,
+            specialized electronic payment systems such as PayPal, as well as
+            payments in cryptocurrencies such as Bitcoin, Ethereum and others.
+          </p>
+        </div>
+      </li>
+
+      <li class="faq-item ac">
+        <div class="faq-item-container ac-header">
+          <h3>How can I contact you?</h3>
+
+          <button class="faq-arrow-btn ac-trigger" type="button">
+            <svg
+              class="faq-arrow-icon"
+              width="20"
+              height="20"
+              aria-label="arrow up icon"
+            >
+              <use href="/js_100_Abrandrokc/assets/sprite-9c84ecfb.svg#icon-arrow-down"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="ac-panel">
+          <p class="answer-question ac-text">
+            In the field of web development, there are various technologies and
+            programming languages. Typically, this includes a combination of
+            frontend (client side) and backend (server side) languages.
+          </p>
+        </div>
+      </li>
+
+      <li class="faq-item ac">
+        <div class="faq-item-container ac-header">
+          <h3>Do you provide advice or support?</h3>
+
+          <button class="faq-arrow-btn ac-trigger" type="button">
+            <svg
+              class="faq-arrow-icon"
+              width="20"
+              height="20"
+              aria-label="arrow up icon"
+            >
+              <use href="/js_100_Abrandrokc/assets/sprite-9c84ecfb.svg#icon-arrow-down"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="ac-panel">
+          <p class="answer-question ac-text">
+            The terms of project implementation depend to a large extent on a
+            number of factors, such as the scope of the project, its complexity,
+            and the availability of resources. Determining exact deadlines is a
+            difficult task, and it usually occurs during the planning phase of
+            the project.
+          </p>
+        </div>
+      </li>
+
+      <li class="faq-item ac">
+        <div class="faq-item-container ac-header">
+          <h3 class="faq-item-headline">
+            What does the process of developing a software product look like
+            from idea to implementation?
+          </h3>
+          <button class="faq-arrow-btn ac-trigger" type="button">
+            <svg
+              class="faq-arrow-icon"
+              width="20"
+              height="20"
+              aria-label="arrow up icon"
+            >
+              <use href="/js_100_Abrandrokc/assets/sprite-9c84ecfb.svg#icon-arrow-down"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="ac-panel">
+          <p class="answer-question ac-text">
+            Payment through credit and debit cards such as Visa, MasterCard,
+            specialized electronic payment systems such as PayPal, as well as
+            payments in cryptocurrencies such as Bitcoin, Ethereum and others.
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+    <section class="section covers">
+  <ul class="covers-list">
+    <li class="layer">
+      <ul class="row">
+        <li class="row-item">
+          <img
+            src="/js_100_Abrandrokc/assets/Rectangle10-09f27bcb.png"
+            srcset="/js_100_Abrandrokc/assets/Rectangle10@2x-a863e767.png 2x"
+            alt="project№10"
+            width="282"
+            height="162"
+          />
+        </li>
+        <li class="row-item">
+          <img
+            src="/js_100_Abrandrokc/assets/Rectangle7-1e3cb8f4.png"
+            srcset="/js_100_Abrandrokc/assets/Rectangle7-8fb88c89.jpg 2x"
+            alt="project№7"
+            width="282"
+            height="162"
+          />
+        </li>
+        <li class="row-item">
+          <img
+            src="/js_100_Abrandrokc/assets/Rectangle12-d86346b8.png"
+            srcset="/js_100_Abrandrokc/assets/Rectangle12@2x-269ecbad.png 2x"
+            alt="project№12"
+            width="282"
+            height="162"
+          />
+        </li>
+      </ul>
+    </li>
+
+    <li class="layer">
+      <ul class="row">
+        <li class="row-item">
+          <img
+            src="/js_100_Abrandrokc/assets/Rectangle11-3eca073b.png"
+            srcset="/js_100_Abrandrokc/assets/Rectangle11@2x-4f8554b8.png 2x"
+            alt="project№11"
+            width="282"
+            height="162"
+          />
+        </li>
+        <li class="row-item">
+          <img
+            src="/js_100_Abrandrokc/assets/Rectangle12-d86346b8.png"
+            srcset="/js_100_Abrandrokc/assets/Rectangle12@2x-269ecbad.png 2x"
+            alt="project№12"
+            width="282"
+            height="162"
+          />
+        </li>
+        <li class="row-item">
+          <img
+            src="/js_100_Abrandrokc/assets/Rectangle8-2f0a538d.png"
+            srcset="/js_100_Abrandrokc/assets/Rectangle8@2x-04f7e4f2.png 2x"
+            alt="project№8"
+            width="282"
+            height="162"
+          />
+        </li>
+        <li class="row-item">
+          <img
+            src="/js_100_Abrandrokc/assets/Rectangle6-e92b8de9.png"
+            srcset="/js_100_Abrandrokc/assets/Rectangle6@2x-1d07b17a.png 2x"
+            alt="project№6"
+            width="282"
+            height="162"
+          />
+        </li>
+      </ul>
+    </li>
+
+    <li class="layer">
+      <ul class="row">
+        <li class="row-item">
+          <img
+            src="/js_100_Abrandrokc/assets/Rectangle9-9cbf2958.png"
+            srcset="/js_100_Abrandrokc/assets/Rectangle9@2x-120f2355.png 2x"
+            alt="project№9"
+            width="282"
+            height="162"
+          />
+        </li>
+        <li class="row-item">
+          <img
+            src="/js_100_Abrandrokc/assets/Rectangle4-b3c437eb.png"
+            srcset="/js_100_Abrandrokc/assets/Rectangle4@2x-19cc0467.png 2x"
+            alt="project№4"
+            width="282"
+            height="162"
+          />
+        </li>
+        <li class="row-item">
+          <img
+            src="/js_100_Abrandrokc/assets/Rectangle5-77bd6cb0.png"
+            srcset="/js_100_Abrandrokc/assets/Rectangle5@2x-dccf3923.png 2x"
+            alt="project№5"
+            width="282"
+            height="162"
+          />
+        </li>
+
+        <li class="row-item">
+          <img
+            src="/js_100_Abrandrokc/assets/Rectangle10-09f27bcb.png"
+            srcset="/js_100_Abrandrokc/assets/Rectangle10@2x-a863e767.png 2x"
+            alt="project№10"
+            width="282"
+            height="162"
+          />
+        </li>
+      </ul>
+    </li>
+
+    <li class="layer">
+      <ul class="row">
+        <li class="row-item">
+          <img src="/js_100_Abrandrokc/assets/Rectangle11-3eca073b.png" alt="project№11" />
+        </li>
+        <li class="row-item">
+          <img src="/js_100_Abrandrokc/assets/Rectangle12-d86346b8.png" alt="project№12" />
+        </li>
+        <li class="row-item">
+          <img src="/js_100_Abrandrokc/assets/Rectangle4-b3c437eb.png" alt="project№4" />
+        </li>
+        <li class="row-item">
+          <img src="/js_100_Abrandrokc/assets/Rectangle5-77bd6cb0.png" alt="project№5" />
+        </li>
+        <li class="row-item">
+          <img src="/js_100_Abrandrokc/assets/Rectangle6-e92b8de9.png" alt="project№6" />
+        </li>
+        <li class="row-item">
+          <img src="/js_100_Abrandrokc/assets/Rectangle8-2f0a538d.png" alt="project№8" />
+        </li>
+        <li class="row-item">
+          <img src="/js_100_Abrandrokc/assets/Rectangle9-9cbf2958.png" alt="project№9" />
+        </li>
+      </ul>
+    </li>
+  </ul>
+</section>
+
+    <section class="section reviews">
+  <div class="container container-reviews">
+    <h3 class="reviews-h3">Reviews</h3>
+    <div class="swiper reviews-swiper">
+      <ul class="swiper-wrapper reviews-wrapper"></ul>
+      <div class="reviews-swiper-buttons">
+        <button
+          type="button"
+          id="righth-button"
+          class="swiper-button-prev reviews-prev"
+        >
+          <svg class="reviews-icon" width="32" height="32">
+            <use href="/js_100_Abrandrokc/assets/sprite-9c84ecfb.svg#icon-arrow-narrow-right1"></use>
+          </svg>
+        </button>
+        <button
+          type="button"
+          id="left-button"
+          class="swiper-button-next reviews-next"
+        >
+          <svg class="reviews-icon-right" width="32" height="32">
+            <use href="/js_100_Abrandrokc/assets/sprite-9c84ecfb.svg#icon-arrow-narrow-right"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="section work-together section-work" id="section-work-together">
+  <div class="container container-work">
+    <div class="photo-title">
+      <img
+        class="photo-work"
+        src="/js_100_Abrandrokc/assets/logo-e643378d.png"
+        width="44"
+        height="44"
+        alt="logo-photo"
+      />
+
+      <h2 class="title-work">
+        Let&apos;s <span class="accent-text">work</span>
+      </h2>
+    </div>
+    <h2 class="title-work">together</h2>
+
+    <form class="work-form">
+      <ul class="form-list">
+        <li class="input-list">
+          <input
+            class="form-item"
+            id="mail"
+            type="email"
+            placeholder="clients@gmail.com"
+            required
+          />
+          <span class="error-message" id="email-error"></span>
+        </li>
+
+        <li class="input-list">
+          <input
+            class="form-item"
+            id="comment"
+            type="text"
+            placeholder="comments"
+            required
+            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+          />
+        </li>
+      </ul>
+      <button class="button-send" type="submit">Send</button>
+    </form>
+    <nav>
+      <ul class="navigation">
+        <li class="nav-item email">
+          <a href="mailto:lloydjefferson@gmail.com">lloydjefferson@gmail.com</a>
+        </li>
+        <li class="nav-item phone">
+          <a href="tel:+3801111111111">+380 11 1111 11 11</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="backdrope">
+      <div class="modal-window-work">
+        <button class="button-close" type="button">
+          <svg class="icon-close" width="22">
+            <use href="/js_100_Abrandrokc/assets/sprite-9c84ecfb.svg#icon-x"></use>
+          </svg>
+        </button>
+        <h3 class="modal-title">Thank you for your interest in cooperation!</h3>
+        <p class="modal-text">
+          The manager will contact you shortly to discuss further details and
+          opportunities for cooperation. Please stay in touch.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+    
+  </body>
+</html>
